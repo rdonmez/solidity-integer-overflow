@@ -9,7 +9,7 @@ When you would increment a uint variable over of their max value, It's would be 
 $ npm install
 ```
 
-# 1. Run Tests
+# 2. Run Tests
 ```shell
 $ npx hardhat test
 ```

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.6.0;
+pragma solidity 0.7.0; // use 0.8+ version here
 
 contract Overflow {
 
@@ -8,17 +8,17 @@ contract Overflow {
     uint256 public myUint256 = (2 ** 256) -2;
  
     function incrementUint8() public returns(bool) {
-        myUint8++;
+        myUint8++; // use unchecked here
         return true;
     }
 
     function incrementUint16() public returns(bool) {
-        myUint16++;
+        myUint16++; // use unchecked here
         return true;
     }
 
     function incrementUint256() public returns(bool) {
-        myUint256++;
+        myUint256++; // use unchecked here
         return true;
     }
 }
